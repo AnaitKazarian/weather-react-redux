@@ -3,7 +3,7 @@ const Form = ({setCity}) => {
     const handleClickGetWeather = e => {
         e.preventDefault();
         const city = e.target.city.value.trim();
-        setCity(new String(city));
+        setCity({name: city, timestamp: Date.now()});
         e.target.city.value = '';
     }
 
