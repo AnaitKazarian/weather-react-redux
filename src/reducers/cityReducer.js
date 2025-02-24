@@ -1,7 +1,7 @@
 import {SET_CITY} from "../actions/cityAction.js";
 
 const defaultState = {
-    city: { name: 'Ashdod', timestamp: 0 }
+    city: { name: '', timestamp: 0 }
 };
 
 export const cityReducer = (state= defaultState, action) => {
